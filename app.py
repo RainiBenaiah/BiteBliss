@@ -5,7 +5,6 @@ app = Flask(__name__)
 app.config['DEBUG'] = True  # Enable debug mode
 
 # Set your RapidAPI key and host
-RAPIDAPI_KEY = 'YOUR-RAPIDAPI-KEY'
 RAPIDAPI_HOST = 'food-recipes-with-images.p.rapidapi.com'
 
 @app.route('/')
@@ -33,7 +32,6 @@ def search_recipes():
         # Make a request to the external API
         url = 'https://food-recipes-with-images.p.rapidapi.com/'
         headers = {
-            'X-RapidAPI-Key': RAPIDAPI_KEY,
             'X-RapidAPI-Host': RAPIDAPI_HOST
         }
         params = {'q': search_query}
