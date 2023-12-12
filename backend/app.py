@@ -8,7 +8,9 @@ def index():
 
 @app.route('/get_recipes', methods=['POST'])
 def get_recipes():
-    ingredients = request.form.get('ingredients')
+    # Assuming you have updated the HTML form to use 'ingredient' as the name attribute
+    ingredients = request.form.get('ingredient')
+    
     # Process ingredients and fetch recipes (you'll implement this)
 
     # For now, a simple example response
