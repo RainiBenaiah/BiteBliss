@@ -3,44 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Food Tips and Recipes App</title>
+    <title>Bittebliss</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Food Tips and Recipes App</h1>
-    <form action="/get_recipes" method="post">
-        <label for="cuisine">Preferred Cuisine:</label>
-        <select id="cuisine" name="cuisine" required>
-            <option value="italian">Italian</option>
-            <option value="mexican">Mexican</option>
-            <option value="Thai">Thai</option>
-            <option value="Chinese">Chinese</option>
-            <option value="Turkish">Turkish</option>
-            <option value="Indian">Indian</option>
-        </select>
+    <header>
+        <h1>Bittebliss</h1>
+    </header>
 
-        <label for="ingredient">Have at Home:</label>
-        <select id="ingredient" name="ingredient" required>
-            <option value="tomatoes">Tomatoes</option>
-            <option value="chicken">Chicken</option>
-            <option value="Koshari">Pasta+Rice+pulse</option>
-            <option value="Noodle">Lo Mein</option>
-            <option value="Aloo">Gobi</option>
-            <option value="Beef">Machaca</option>
-        </select>
+    <nav>
+        <a href="#dietary-restrictions">Dietary Restrictions</a>
+        <a href="#ingredients">Ingredients (Have at home)</a>
+        <a href="#preferred-cuisine">Preferred Cuisine</a>
+    </nav>
 
-        <label for="dietary">Dietary Restrictions:</label>
-        <select id="dietary" name="dietary">
-            <option value="vegetarian">Vegetarian</option>
-            <option value="gluten-free">Gluten-Free</option>
-            <option value="raw">Raw-Foodish</option>
-            <option value="Low Sodium">Low-Sodium</option>
-            <option value="Vegan">Vegan</option>
-            <option value="allergies">Food-llergies</option>
-        </select>
+    <section id="dietary-restrictions">
+        <h2>Dietary Restrictions</h2>
+        <p>Insert content about dietary restrictions here...</p>
+    </section>
 
-        <button type="submit">Explore Tips and Recipes</button>
-    </form>
-    <script src="script.js"></script>
+    <section id="ingredients">
+        <h2>Ingredients (Have at home)</h2>
+        <p>Insert content about ingredients here...</p>
+    </section>
+
+    <section id="preferred-cuisine">
+        <h2>Preferred Cuisine</h2>
+        <p>Insert content about preferred cuisine here...</p>
+    </section>
 </body>
 </html>
