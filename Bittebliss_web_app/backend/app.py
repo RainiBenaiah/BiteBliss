@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__)
+app.config['DEBUG'] = True  # Enable debug mode
 
 @app.route('/')
 def index():
