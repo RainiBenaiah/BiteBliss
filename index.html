@@ -36,6 +36,13 @@
         section {
             padding: 20px;
         }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
@@ -51,17 +58,20 @@
 
     <section id="dietary-restrictions">
         <h2>Dietary Restrictions</h2>
-        <p>Insert content about dietary restrictions here...</p>
+        <label for="dietary-input">Enter your dietary restrictions:</label>
+        <input type="text" id="dietary-input" placeholder="E.g., vegetarian, gluten-free, etc.">
     </section>
 
     <section id="ingredients">
         <h2>Ingredients (Have at home)</h2>
-        <p>Insert content about ingredients here...</p>
+        <label for="ingredients-input">List ingredients you have at home:</label>
+        <input type="text" id="ingredients-input" placeholder="E.g., tomatoes, onions, pasta, etc.">
     </section>
 
     <section id="preferred-cuisine">
         <h2>Preferred Cuisine</h2>
-        <p>Insert content about preferred cuisine here...</p>
+        <label for="cuisine-input">Enter your preferred cuisine:</label>
+        <input type="text" id="cuisine-input" placeholder="E.g., Italian, Mexican, Asian, etc.">
     </section>
 </body>
 </html>
