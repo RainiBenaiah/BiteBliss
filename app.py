@@ -1,10 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 
-app = Flask(__name__, template_folder='templates')
-
-from flask import Flask, render_template
-
 app = Flask(__name__)
+app.config['DEBUG'] = True  # Enable debug mode
 
 @app.route('/')
 def index():
@@ -15,9 +12,6 @@ def index():
         # Log the exception for debugging
         print(f"Error: {str(e)}")
         return "An error occurred."
-
-if __name__ == '__main__':
-    app.run(debug=True)
 
 @app.route('/get_recipes', methods=['POST'])
 def get_recipes():
