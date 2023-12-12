@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,8 @@
 </head>
 <body>
     <h1>Food Tips and Recipes App</h1>
-    <form action="/explore" method="post">
-        <label for="cuisine" id="cuisineLab">Preferred Cuisine:</label>
+    <form action="/get_recipes" method="post">
+        <label for="cuisine">Preferred Cuisine:</label>
         <select id="cuisine" name="cuisine" required>
             <option value="italian">Italian</option>
             <option value="mexican">Mexican</option>
@@ -18,7 +18,8 @@
             <option value="Turkish">Turkish</option>
             <option value="Indian">Indian</option>
         </select>
-        <label for="ingredient" id="ingridientLab">Have at Home:</label>
+
+        <label for="ingredient">Have at Home:</label>
         <select id="ingredient" name="ingredient" required>
             <option value="tomatoes">Tomatoes</option>
             <option value="chicken">Chicken</option>
@@ -27,15 +28,17 @@
             <option value="Aloo">Gobi</option>
             <option value="Beef">Machaca</option>
         </select>
-        <label for="dietary" id="dietaryLab">Dietary Restrictions:</label>
+
+        <label for="dietary">Dietary Restrictions:</label>
         <select id="dietary" name="dietary">
             <option value="vegetarian">Vegetarian</option>
             <option value="gluten-free">Gluten-Free</option>
             <option value="raw">Raw-Foodish</option>
             <option value="Low Sodium">Low-Sodium</option>
             <option value="Vegan">Vegan</option>
-            <option value="allergies">Food-Allergies</option>
+            <option value="allergies">Food-llergies</option>
         </select>
+
         <button type="submit">Explore Tips and Recipes</button>
     </form>
     <script src="script.js"></script>
